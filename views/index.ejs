@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% if (!LoggedIn){ %>
+        <a href="/studentlogin">student login</a>
+        <a href="/studentregister">student register</a>
+        <a href="/employerlogin">employer login</a>
+        <a href="/employerregister">employer register</a>
+    <% }else{ %>
+        <a href="/student/preference">Preferences</a>
+        <a href="/student/personaldetails">personal details</a>
+        <a href="/student/experience">experience</a>
+        <a href="/student/skills">Skills</a>
+        <a href="/student/worksample">work sample</a>
+        <a href="/logout">logout</a>
+    <% } %>
+    <form action="/" method="post">
+        <input type="checkbox" name="preference" id="preference">
+        <label for="preference">Show internship as per my preference</label><br>
+        <label for="minstipend">Desired minimum Stipend</label>
+        <input type="text" id="minstipend" name="minstipend"><br><br>
+        <label for="startdate">Starting Date</label>
+        <input type="date" name="startdate" id="startdate"><br><br>
+        <label for="minduration">Minimum duration</label>
+        <input type="number" name="minduration" id="minduration"><br><br>
+        <input type="checkbox" name="women" id="women">
+        <label for="women">Internship for women</label><br><br>
+        <input type="checkbox" name="joboffer" id="joboffer">
+        <label for="joboffer">Internship with job offer</label><br><br>
+        <label for="category">category</label>
+        <input type="text" id="category" name="category"><br><br>
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location"><br><br>
+        <input type="checkbox" name="home" id="home">
+        <label for="home">Work from home</label><br>
+        <input type="checkbox" name="parttime" id="parttime">
+        <label for="parttime">Part Time</label><br>
+        <input type="button" value="APPLY" id="apply" name="apply">
+    </form>
+    <% result.forEach(function(row){%>
+        <%= row.sno %> <br>
+        <%= row.time%>
+    <% }) %>
+</body>
+</html>

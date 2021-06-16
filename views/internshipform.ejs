@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <p>Profile</p>
+        <input type="radio" id="sales" name="profile" value="sales">
+        <label for="sales">Business Development (Sales)</label><br>
+        <input type="radio" id="webdevelopment" name="profile" value="webdevelopment">
+        <label for="webdevelopment">Web Development</label><br>
+        <input type="radio" id="graphicdesign" name="profile" value="graphicdesign">
+        <label for="graphicdesign">Graphic Design</label><br>
+        <input type="radio" id="contentwriting" name="profile" value="contentwriting">
+        <label for="contentwriting">Content Writing</label><br>
+        <input type="radio" id="socialmedia" name="profile" value="socialmedia">
+        <label for="socialmedia">Social Media Marketing</label><br>
+        <input type="radio" id="marketing" name="profile" value="marketing">
+        <label for="marketing">Marketing</label><br>
+        <input type="radio" id="operations" name="profile" value="operations">
+        <label for="operations">Operations</label><br>
+        <input type="radio" id="appdevp" name="profile" value="appdevp">
+        <label for="appdevp">Mobile App Development</label><br>
+        <input type="radio" id="DM" name="profile" value="DM">
+        <label for="DM">Digital Marketing</label><br>
+        <input type="radio" id="HR" name="profile" value="HR">
+        <label for="HR">Human Resources</label><br>
+        <input type="radio" id="law" name="profile" value="law">
+        <label for="law">Law/Legal</label><br>
+        <input type="radio" id="campusambassador" name="profile" value="campusambassador">
+        <label for="campusambassador">Campus Ambassador</label><br>
+        <input type="radio" id="others" name="profile" value="others">
+        <label for="others">Others</label><br>
+        <p>Internship type</p>
+        <input type="radio" id="regular" name="type" value="regular">
+        <label for="regular">Regular (In-office/On-field)</label><br>
+        <input type="radio" id="home" name="type" value="home">
+        <label for="home">Work From Home (Recommended due to COVID-19 situation</label><br><br><br><br>
+        <input type="checkbox" id="detail" name="detail" value="detail">
+        <label for="detail">I am open to interviewing candidates online and allowing 
+            them to work from home or defer the joining date till current COVID-19 
+            situation improves
+        </label><br><br><br>
+        <p>part time/ full-time</p>
+        <input type="radio" name="parttime" id="parttime">
+        <label for="parttime">Part Time</label><br>
+        <input type="radio" name="fulltime" id="fulltime">
+        <label for="fulltime">Full Time</label><br><br>
+        <label for="city">City/Cities</label>
+        <input type="text" id="city" name="city" value="city"><br><br>
+        <label for="opening">Numer of openings</label>
+        <input type="text" id="opening" name="opening" value="opening"><br><br>
+        <p>internship start date</p>
+        <input type="radio" id="immediate" name="startdate" value="Immediate">
+        <label for="immediate">Immediate (within next 30 days)</label><br>
+        <input type="radio" id="later" name="startdate" value="later">
+        <label for="later">Later</label><br><br>
+        <p>Internship duration</p>
+        <select name="durationinnumber" id="durationinnumber">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <select name="duration" id="durationin">
+            <option value="week">week</option>
+            <option value="months">months</option>
+        </select><br><br>
+       <label for="responsibility">Intern's responsibility</label>
+       <input type="text" id="responsibility" name="responsibility" value="selected intern's day to day responsibilities includes:">
+        <h4>Stipend and perks</h4>
+        <p>Stipend</p>
+        <input type="radio" id="fixed" name="stipend" value="Fixed">
+        <label for="fixed">Fixed</label>
+        <input type="radio" id="negotiable" name="stipend" value="negotiable">
+        <label for="negotiable">Negotiable</label>
+        <input type="radio" id="performance" name="stipend" value="performance">
+        <label for="performance">performance</label>
+        <input type="radio" id="unpaid" name="stipend" value="unpaid">
+        <label for="unpaid">unpaid</label>
+        <div class="fixed">
+           <select name="currency" id="currency">
+               <option value="rs">Rs</option>
+               <option value="dol">Dollar</option>
+           </select>
+           <input type="number" value="amount" name="amount" >
+           <select name="duration" id="duration">
+            <option value="week">/week</option>
+            <option value="month">/month</option>
+            <option value="lumpsum">Lump sum</option>
+        </select>
+        </div>
+        <div class="negotiable">
+            <select name="currency" id="currency">
+                <option value="rs">Rs</option>
+                <option value="dol">Dollar</option>
+            </select>
+            <input type="number" value="amount" name="amount" >
+            to 
+            <input type="number" value="amount1" name="amount1" >
+            <select name="duration" id="duration">
+             <option value="week">/week</option>
+             <option value="month">/month</option>
+             <option value="lumpsum">Lump sum</option>
+         </select>
+        </div>
+        <div class="performancebased">
+            Minimum assured
+            <select name="currency" id="currency">
+                <option value="rs">Rs</option>
+                <option value="dol">Dollar</option>
+            </select>
+            <input type="number" value="amount" name="amount" >
+            <select name="duration" id="duration">
+             <option value="week">/week</option>
+             <option value="month">/month</option>
+             <option value="lumpsum">Lump sum</option>
+         </select>
+         Incentives based
+         <select name="currency" id="currency">
+            <option value="rs">Rs</option>
+            <option value="dol">Dollar</option>
+        </select>
+        <input type="number" value="amount" name="amount" >
+        per
+        <select name="incentive" id="incentive">
+         <option value="writeup">/writeup</option>
+         <option value="Design">/Design</option>
+         <option value="video">video</option>
+         <option value="dataentry">dataentry</option>
+         <option value="others">others</option>
+         <option value="percent">percent</option>
+     </select>
+     <input type="text" name="otherinc" id="otherinc">
+        </div>
+        <p>perks</p>
+        <input type="checkbox" id="certificate" name="certificate" value="certificate">
+        <label for="certificate">Certificate</label><br>
+        <input type="checkbox" id="letter" name="letter" value="letter">
+        <label for="letter">letter of recommendation</label><br>
+        <input type="checkbox" id="workhour" name="workhour" value="workhour">
+        <label for="workhour">Flexible Work Hour</label><br>
+        <input type="checkbox" id="dresscode" name="dresscode" value="dresscode">
+        <label for="dresscode">Informal Dress Code</label><br>
+        <input type="checkbox" id="5days" name="5days" value="5days">
+        <label for="5days">5 days of a week</label><br>
+        <input type="checkbox" id="snacks" name="snacks" value="snacks">
+        <label for="snacks">Free snacks</label><br>
+        <label for="ppo">Does this internship comes with PPO offer?</label>
+        <input type="button" id="ppo" name="ppo">
+        <h4>Skills and assessment</h4>
+        <label for="skills">Skills Required</label>
+        <input type="text" name="skills" id="skills"><br><br>
+        <input type="checkbox" name="women" id="women">
+        <label for="women">Allow applications from women also who are willing to start/restart their career</label><br><br><br>
+        <label for="question">Assessment
+            Question 1 & 2 will be asked to every applicant by default. If you wish, you may ask two more customized questions.
+            Question 1 Why should you be hired for this role?
+            
+            Question 2 Are you available for 4 weeks, starting immediately, for a full-time internship? If not, what is the time period you are available for and the earliest date you can start this internship on?
+            
+            If you want the applicants to upload a document as a part of the assessment questions, please ask them to upload it on Dropbox or Google Drive and share the link in the answer.</label>
+        <input type="text" id="question" name="question"><br><br><br>
+        <button type="submit">save draft</button><br> <br>
+        <button type="submit">Post internship</button>
+    </form>
+</body>
+</html>

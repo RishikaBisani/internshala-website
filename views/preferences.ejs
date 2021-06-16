@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferences</title>
+</head>
+<body>
+
+    <form action="/student/preference" method="post">
+       Internship <input type="radio" onclick="javascript:internshiporjob();" name="internshiporjob" id="internshipcheck"> 
+       Fresher Jobs <input type="radio" onclick="javascript:internshiporjob();" name="internshiporjob" id="jobCheck"><br>
+        <div class="ifinternship" >
+            <label for="internshiplooking">which is the following internships you are looking for?</label>
+            <input type="radio" name="internshiptype" id="inoffice">
+            <label for="inofficeint">In Office</label><br>
+            <input type="radio" name="internshiptype" id="home">
+            <label for="remoteint">Work from home</label><br><br>
+        </div>
+
+        <div class="ifjob" >
+            <label for="joblooking">which is the following job you are looking for?</label>
+            <input type="radio" name="jobtype" id="inoffice">
+            <label for="inofficejob">In Office</label><br>
+            <input type="radio" name="jobtype" id="remote">
+            <label for="remotejob">Remote</label><br><br>
+        </div>
+
+
+        <p>Which fields are you willing to work?</p>
+        <input type="text" name="preference1" id="preference1" value="Select your 1st preference">
+        <input type="text" name="preference2" id="preference2" value="Select your 2st preference">
+        <input type="text" name="preference3" id="preference3" value="Select your 3st preference"><br><br>
+
+        <input type="checkbox" name="openfor" id="openfor">
+        <label for="openfor">I am also open for internships</label>
+        <button type="submit">Save & Next</button>
+    </form>
+
+</body>
+<script>
+    function internshiporjob() {
+    if (document.getElementById("internshipCheck").checked) {
+        document.getElementById("ifinternship").style.visibility = "visible";
+    }
+    else document.getElementById("ifinternship").style.visibility = "hidden";
+
+}
+</script>
+</html>
